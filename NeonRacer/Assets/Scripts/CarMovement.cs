@@ -22,8 +22,8 @@ public class CarMovement : MonoBehaviour
         {
             //AI stuff here
         }
-        moveTest = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        MoveCar(moveTest);
+        //moveTest = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        //MoveCar(moveTest);
     }
 
     public void MoveCar(Vector3 direction)
