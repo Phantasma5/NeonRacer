@@ -8,8 +8,10 @@ public class ControllerDetection : MonoBehaviour
 {
     [HideInInspector] private List<bool> controllers = new List<bool>();
     [SerializeField] private List<Text> titleTxt = new List<Text>();
+    References refInstance;
     private void Start()
     {
+        refInstance = FindObjectOfType<References>();
         string[] joysticks = Input.GetJoystickNames();
         Debug.Log(joysticks.Length);
         for (int i = 0; i < joysticks.Length; ++i)
@@ -26,6 +28,7 @@ public class ControllerDetection : MonoBehaviour
             {
                 controllers[i] = true;
                 titleTxt[i].text = "Player " + (i+1) + " is Ready!";
+                refInstance.players.Add(new GameObject()); //Add a new car to the list
             }
         }
         if(Input.GetButtonDown("Start"))
