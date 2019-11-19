@@ -28,7 +28,7 @@ public class ControllerDetection : MonoBehaviour
             {
                 controllers[i] = true;
                 titleTxt[i].text = "Player " + (i+1) + " is Ready!";
-                refInstance.players.Add(new GameObject()); //Add a new car to the list
+                refInstance.AddPlayer();
             }
         }
         if(Input.GetButtonDown("Start"))

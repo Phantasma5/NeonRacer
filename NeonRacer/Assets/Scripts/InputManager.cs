@@ -21,7 +21,7 @@ public class InputManager : MonoBehaviour
         {
             if(gameObject == refInstance.players[i])
             {
-                refInstance.players[i].GetComponent<CarMovement>().MoveCar(new Vector3(Input.GetAxis("Horizontal " + i), Input.GetAxis("Vertical " + i)));
+                refInstance.players[i].GetComponent<CarMovement>().MoveCar(new Vector3(Input.GetAxis("Horizontal " + i), 0, Input.GetAxis("Vertical " + i)));
             }
         }
     }
