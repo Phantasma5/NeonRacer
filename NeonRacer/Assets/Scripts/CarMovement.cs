@@ -7,12 +7,11 @@ public class CarMovement : MonoBehaviour
 {
     public bool playerControlled;
     public List<GameObject> points = new List<GameObject>();
-    GameObject currentPoint;
-    NavMeshAgent carAgent;
-    Vector3 moveTest = new Vector3();
-    int nextDestination;
+    private GameObject currentPoint;
+    private NavMeshAgent carAgent;
+    private Vector3 moveTest = new Vector3();
+    private int nextDestination;
     
-    // Start is called before the first frame update
     void Start()
     {
         carAgent = GetComponent<NavMeshAgent>();
@@ -24,24 +23,17 @@ public class CarMovement : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(playerControlled == false)
         {
-            //AI stuff here
-            carAgent.destination = currentPoint.transform.position;
-            if(!carAgent.pathPending && carAgent.remainingDistance < 1)
-            {
-                NextPoint();
-            }
+            ////AI stuff here
+            //carAgent.destination = currentPoint.transform.position;
+            //if(!carAgent.pathPending && carAgent.remainingDistance < 1)
+            //{
+            //    NextPoint();
+            //}
         }
-        else
-        {
-            moveTest = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            MoveCar(moveTest);
-        }
-        
     }
 
     public void MoveCar(Vector3 direction)
