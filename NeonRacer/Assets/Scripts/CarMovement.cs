@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class CarMovement : MonoBehaviour
 {
     public bool playerControlled;
-    public List<GameObject> points = new List<GameObject>();
+    public GameObject[] points;
     private GameObject currentPoint;
     private NavMeshAgent carAgent;
     private Vector3 moveTest = new Vector3();
@@ -14,6 +14,7 @@ public class CarMovement : MonoBehaviour
     
     void Start()
     {
+        points = GameObject.FindGameObjectsWithTag("Point");
         carAgent = GetComponent<NavMeshAgent>();
         currentPoint = points[0];
         if(playerControlled == false)
@@ -28,11 +29,11 @@ public class CarMovement : MonoBehaviour
         if(playerControlled == false)
         {
             ////AI stuff here
-            //carAgent.destination = currentPoint.transform.position;
-            //if(!carAgent.pathPending && carAgent.remainingDistance < 1)
-            //{
-            //    NextPoint();
-            //}
+            carAgent.destination = currentPoint.transform.position;
+            if(!carAgent.pathPending && carAgent.remainingDistance < 1)
+            {
+                NextPoint();
+            }
         }
     }
 
@@ -45,6 +46,6 @@ public class CarMovement : MonoBehaviour
     public void NextPoint() // Grab the next point for the AI car to move to
     {
         currentPoint = points[nextDestination];
-        nextDestination = (nextDestination + 1) % points.Count;
+        nextDestination = (nextDestination + 1) % points.Length;
     }
 }
