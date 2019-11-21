@@ -6,45 +6,46 @@ using UnityEngine.SceneManagement;
 
 public class ControllerDetection : MonoBehaviour
 {
-    [HideInInspector] private List<bool> controllers = new List<bool>();
     [SerializeField] private List<Text> titleTxt = new List<Text>();
-    References refInstance;
     private void Start()
     {
-        refInstance = FindObjectOfType<References>();
         string[] joysticks = Input.GetJoystickNames();
-        Debug.Log(joysticks.Length);
         for (int i = 0; i < joysticks.Length; ++i)
         {
-            titleTxt[i].text = "Player " + (i+1) + " Press A to Join!";
-            controllers.Add(false);
+            titleTxt[i].text = "Player " + (i + 1) + " Press A to Join!";
+            References.controllers.Add(false);
+        }
+        if (0 == joysticks.Length)
+        {
+            titleTxt[0].text = "Player " + 1 + " Press Space to Join!";
+            References.controllers.Add(false);
         }
     }
     private void Update()
     {
-        for (int i = 0; i < controllers.Count; ++i)
+        for (int i = 0; i < References.controllers.Count; ++i)
         {
-            if (Input.GetButtonDown("A" + (i+1)))
+            if (Input.GetButtonDown("A" + (i + 1)))
             {
-                controllers[i] = true;
-                titleTxt[i].text = "Player " + (i+1) + " is Ready!";
-                refInstance.AddPlayer();
+                References.controllers[i] = true;
+                titleTxt[i].text = "Player " + (i + 1) + " is Ready!";
             }
         }
-        if(Input.GetButtonDown("Start"))
+        if (Input.GetButtonDown("Start"))
         {
             CheckStart();
         }
     }
     private void CheckStart()
     {
-        foreach (var item in controllers)
+        foreach (var item in References.controllers)
         {
             if (item == false)
             {
                 return;
             }
         }
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level");
+        References.instance.gameObject.GetComponent<SpawnManager>().SpawnCars();
     }
 }

@@ -6,42 +6,41 @@ using UnityEngine.AI;
 public class CarMovement : MonoBehaviour
 {
     public bool playerControlled;
-    public List<GameObject> points = new List<GameObject>();
-    GameObject currentPoint;
-    NavMeshAgent carAgent;
-    Vector3 moveTest = new Vector3();
-    int nextDestination;
+    public GameObject[] points;
+    private NavMeshAgent carAgent;
+    private Vector3 moveTest = new Vector3();
+    private int nextDestination;
+    [SerializeField]
+    private float changeDistance;
     
-    // Start is called before the first frame update
     void Start()
     {
+        
+        points = GameObject.FindGameObjectsWithTag("Point");
         carAgent = GetComponent<NavMeshAgent>();
-        currentPoint = points[0];
-        if(playerControlled == false)
+
+        //nextDestination = 0;
+        if (playerControlled == false)
         {
-            carAgent.speed = Random.Range(2, 6);
-            carAgent.acceleration = Random.Range(1,8);
+            //carAgent.speed = 50;
+            //carAgent.acceleration = 50;
+            changeDistance = Random.Range(0.5f, 3.5f);
+            NextPoint();
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(playerControlled == false)
         {
-            //AI stuff here
-            carAgent.destination = currentPoint.transform.position;
-            if(!carAgent.pathPending && carAgent.remainingDistance < 1)
+            ////AI stuff here
+            //carAgent.destination = points[nextDestination].transform.position;
+            
+            if(!carAgent.pathPending && carAgent.remainingDistance < changeDistance)
             {
                 NextPoint();
             }
         }
-        else
-        {
-            moveTest = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            MoveCar(moveTest);
-        }
-        
     }
 
     public void MoveCar(Vector3 direction)
@@ -52,7 +51,8 @@ public class CarMovement : MonoBehaviour
 
     public void NextPoint() // Grab the next point for the AI car to move to
     {
-        currentPoint = points[nextDestination];
-        nextDestination = (nextDestination + 1) % points.Count;
+        carAgent.destination = points[nextDestination].transform.position;
+        Debug.Log(carAgent.destination);
+        nextDestination = (nextDestination + 1) % points.Length;
     }
 }
