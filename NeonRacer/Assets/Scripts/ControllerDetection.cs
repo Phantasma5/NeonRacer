@@ -45,7 +45,7 @@ public class ControllerDetection : MonoBehaviour
                 return;
             }
         }
-        SceneManager.LoadScene("nates scene");
+        SceneManager.LoadScene("Level");
         References.instance.gameObject.GetComponent<SpawnManager>().SpawnCars();
     }
 }
