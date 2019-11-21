@@ -7,20 +7,25 @@ public class CarMovement : MonoBehaviour
 {
     public bool playerControlled;
     public GameObject[] points;
-    private GameObject currentPoint;
     private NavMeshAgent carAgent;
     private Vector3 moveTest = new Vector3();
     private int nextDestination;
+    [SerializeField]
+    private float changeDistance;
     
     void Start()
     {
+        
         points = GameObject.FindGameObjectsWithTag("Point");
         carAgent = GetComponent<NavMeshAgent>();
-        currentPoint = points[0];
-        if(playerControlled == false)
+
+        //nextDestination = 0;
+        if (playerControlled == false)
         {
-            carAgent.speed = Random.Range(2, 6);
-            carAgent.acceleration = Random.Range(1,8);
+            //carAgent.speed = 50;
+            //carAgent.acceleration = 50;
+            changeDistance = Random.Range(0.5f, 3.5f);
+            NextPoint();
         }
     }
 
@@ -29,8 +34,9 @@ public class CarMovement : MonoBehaviour
         if(playerControlled == false)
         {
             ////AI stuff here
-            carAgent.destination = currentPoint.transform.position;
-            if(!carAgent.pathPending && carAgent.remainingDistance < 1)
+            //carAgent.destination = points[nextDestination].transform.position;
+            
+            if(!carAgent.pathPending && carAgent.remainingDistance < changeDistance)
             {
                 NextPoint();
             }
@@ -45,7 +51,8 @@ public class CarMovement : MonoBehaviour
 
     public void NextPoint() // Grab the next point for the AI car to move to
     {
-        currentPoint = points[nextDestination];
+        carAgent.destination = points[nextDestination].transform.position;
+        Debug.Log(carAgent.destination);
         nextDestination = (nextDestination + 1) % points.Length;
     }
 }

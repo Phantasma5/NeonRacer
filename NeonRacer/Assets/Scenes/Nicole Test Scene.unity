@@ -390,6 +390,7 @@ MonoBehaviour:
   - {fileID: 1095179277}
   - {fileID: 394467710}
   - {fileID: 542498194}
+  changeDistance: 0
 --- !u!195 &465356000
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -723,6 +724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerControlled: 1
   points: []
+  changeDistance: 0
 --- !u!1 &939410244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1089,7 @@ MonoBehaviour:
   - {fileID: 1095179277}
   - {fileID: 394467710}
   - {fileID: 542498194}
+  changeDistance: 0
 --- !u!195 &1216815733
 NavMeshAgent:
   m_ObjectHideFlags: 0

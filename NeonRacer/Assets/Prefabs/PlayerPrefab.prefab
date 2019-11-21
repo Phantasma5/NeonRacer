@@ -89,7 +89,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8579971868601559735}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bf75a0d381498e7498329038cce7ce67, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -105,8 +105,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 8
-  m_Acceleration: 5
+  m_Speed: 3
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 60
   m_StoppingDistance: 1
@@ -115,8 +115,8 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 0.99999994
   m_BaseOffset: 0.49999997
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_WalkableMask: 1
+  m_ObstacleAvoidanceType: 3
 --- !u!114 &4101801444533779190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,8 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a925cb55d8d274b4c8449c44d39f88b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerControlled: 1
+  playerControlled: 0
   points: []
+  changeDistance: 0
 --- !u!208 &428919046645377026
 NavMeshObstacle:
   m_ObjectHideFlags: 0
