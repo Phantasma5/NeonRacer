@@ -32,7 +32,7 @@ public class SpawnManager : MonoBehaviour
         }
         for(int i = 0; i < 4; ++i)
         {
-            References.players[i].transform.position = new Vector3(i*2, 0, 0);
+            References.players[i].transform.position = new Vector3(i*2, 9.4f, -40);
         }
     }
 }
