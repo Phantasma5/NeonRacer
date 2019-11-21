@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject playerPrefab;
+    [SerializeField]
+    GameObject[] playerObjects;
     public void AddPlayer(bool aHuman) //Add controlable player
     {
         GameObject newPlayer = Instantiate(playerPrefab);
@@ -19,18 +21,24 @@ public class SpawnManager : MonoBehaviour
     IEnumerator SpawnCarsCoroutine()
     {
         yield return new WaitForSeconds(0.5f);
-        for(int i = 0; i < 4; ++i)
+        //for(int i = 0; i < 4; ++i)
+        //{
+        //    if(i < References.controllers.Count)
+        //    {
+        //        AddPlayer(true);
+        //    }
+        //    else
+        //    {
+        //        AddPlayer(false);
+        //    }
+        //}
+        playerObjects = GameObject.FindGameObjectsWithTag("Player");
+        for (int i = 0; i < References.controllers.Count; i++)
         {
-            if(i < References.controllers.Count)
-            {
-                AddPlayer(true);
-            }
-            else
-            {
-                AddPlayer(false);
-            }
+            playerObjects[i].GetComponent<CarMovement>().playerControlled = true;
+            References.players.Add(playerObjects[i]);
         }
-        for(int i = 0; i < 4; ++i)
+        for (int i = 0; i < 4; ++i)
         {
             References.players[i].transform.position = new Vector3(i*2, 0, 0);
             switch(i)
