@@ -7,6 +7,7 @@ public class CarMovement : MonoBehaviour
 {
     public bool playerControlled;
     public GameObject[] points;
+    private int[] pNum;
     private NavMeshAgent carAgent;
     private Vector3 moveTest = new Vector3();
     private int nextDestination;
@@ -21,7 +22,7 @@ public class CarMovement : MonoBehaviour
 
         if (playerControlled == false)
         {
-            changeDistance = Random.Range(0.5f, 3.5f);
+            changeDistance = Random.Range(0.75f, 3.5f);
             NextPoint();
         }
     }

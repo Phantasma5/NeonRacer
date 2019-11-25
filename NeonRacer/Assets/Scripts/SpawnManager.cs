@@ -19,7 +19,7 @@ public class SpawnManager : MonoBehaviour
     }
     IEnumerator SpawnCarsCoroutine()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         //for(int i = 0; i < 4; ++i)
         //{
         //    if(i < References.controllers.Count)
