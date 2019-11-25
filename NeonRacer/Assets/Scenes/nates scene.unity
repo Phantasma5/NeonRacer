@@ -15746,6 +15746,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Global Light 2D
       objectReference: {fileID: 0}
+    - target: {fileID: 2559751272642527216, guid: 28935dec011193b4591275be88ec2d0d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2559751272642527218, guid: 28935dec011193b4591275be88ec2d0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15939,12 +15944,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8140143119429031100, guid: 5d53f002ffd1c0f47b7a29bc56b8b0a8,
-        type: 3}
-      propertyPath: m_NavMeshData
-      value: 
-      objectReference: {fileID: 23800000, guid: 82626e47f8cadc34eb41e072bedff705,
-        type: 2}
     - target: {fileID: 8140143118307845862, guid: 5d53f002ffd1c0f47b7a29bc56b8b0a8,
         type: 3}
       propertyPath: m_Mesh
@@ -15965,5 +15964,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1520882661}
+    - target: {fileID: 8140143119429031100, guid: 5d53f002ffd1c0f47b7a29bc56b8b0a8,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 82626e47f8cadc34eb41e072bedff705,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d53f002ffd1c0f47b7a29bc56b8b0a8, type: 3}
