@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System;
 
 public class CarMovement : MonoBehaviour
 {
@@ -13,16 +14,17 @@ public class CarMovement : MonoBehaviour
     private int nextDestination;
     [SerializeField]
     private float changeDistance;
+    private PointManager pointInstance;
     
     void Start()
     {
-        
-        points = GameObject.FindGameObjectsWithTag("Point");
+        pointInstance = FindObjectOfType<PointManager>();
+        points = pointInstance.pointHolder;
         carAgent = GetComponent<NavMeshAgent>();
 
         if (playerControlled == false)
         {
-            changeDistance = Random.Range(0.75f, 3.5f);
+            changeDistance = UnityEngine.Random.Range(0.75f, 3.5f);
             NextPoint();
         }
     }
