@@ -15,9 +15,11 @@ public class CarMovement : MonoBehaviour
     [SerializeField]
     private float changeDistance;
     private PointManager pointInstance;
-    
+    private float inputCD;
+
     void Start()
     {
+        inputCD = Time.time;
         pointInstance = FindObjectOfType<PointManager>();
         points = pointInstance.pointHolder;
         carAgent = GetComponent<NavMeshAgent>();
@@ -27,14 +29,18 @@ public class CarMovement : MonoBehaviour
             changeDistance = UnityEngine.Random.Range(0.75f, 3.5f);
             NextPoint();
         }
+        else
+        {
+            carAgent.destination = transform.position;
+        }
     }
 
     void Update()
     {
-        if(playerControlled == false)
+        if (playerControlled == false)
         {
             ////AI stuff here
-            if(!carAgent.pathPending && carAgent.remainingDistance < changeDistance)
+            if (!carAgent.pathPending && carAgent.remainingDistance < changeDistance)
             {
                 NextPoint();
             }
@@ -43,8 +49,14 @@ public class CarMovement : MonoBehaviour
 
     public void MoveCar(Vector3 direction)
     {
-        carAgent.destination = new Vector3(transform.position.x, 0, transform.position.z);
-        carAgent.destination += direction;
+        carAgent.destination = transform.position;//make it stop
+
+        GameObject temp = new GameObject();
+        Vector3 pos = transform.position;
+        pos.x += direction.x;
+        pos.z += direction.z;
+        temp.transform.position = pos;
+        carAgent.destination = temp.transform.position;
     }
 
     public void NextPoint() // Grab the next point for the AI car to move to
