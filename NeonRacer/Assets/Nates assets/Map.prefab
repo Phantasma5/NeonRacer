@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 8140143118307845863}
   - component: {fileID: 8140143118307845860}
   - component: {fileID: 8140143118307845861}
+  - component: {fileID: 8140143117895571107}
   m_Layer: 0
   m_Name: Inner border
   m_TagString: Untagged
@@ -9799,6 +9800,610 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &8140143117895571107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140143118307845858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a85c5879d519aa4ab2ebbf42591149a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - position: {x: -10.375872, y: 0, z: -5.4788685}
+    direction: {x: -10.375872, y: 0, z: -8.4788685}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -13.220129, y: 0, z: -19.907202}
+    direction: {x: -13.220129, y: 0, z: -16.907202}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -23.796501, y: 0, z: -21.448063}
+    direction: {x: -23.796501, y: 0, z: -18.448063}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -51.039883, y: 0, z: -13.948688}
+    direction: {x: -51.039883, y: 0, z: -10.948688}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -77.24705, y: 0, z: -6.16329}
+    direction: {x: -77.24705, y: 0, z: -3.16329}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -97.19562, y: 0, z: -33.696365}
+    direction: {x: -97.19562, y: 0, z: -30.696365}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -100.27748, y: 0, z: -62.73866}
+    direction: {x: -100.27748, y: 0, z: -59.73866}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -83.79688, y: 0, z: -77.98}
+    direction: {x: -83.79688, y: 0, z: -74.98}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -39.01424, y: 0, z: -107.16206}
+    direction: {x: -39.01424, y: 0, z: -104.16206}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -20.737072, y: 0, z: -98.83822}
+    direction: {x: -20.737072, y: 0, z: -95.83822}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -15.556465, y: 0, z: -90.51089}
+    direction: {x: -15.556465, y: 0, z: -87.51089}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -25.381823, y: 0, z: -74.822426}
+    direction: {x: -25.381823, y: 0, z: -71.822426}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -57.882046, y: 0, z: -76.436935}
+    direction: {x: -57.882046, y: 0, z: -73.436935}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -77.427055, y: 0, z: -62.49677}
+    direction: {x: -77.427055, y: 0, z: -59.49677}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -74.65343, y: 0, z: -36.75521}
+    direction: {x: -74.65343, y: 0, z: -33.75521}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -53.81762, y: 0, z: -31.657366}
+    direction: {x: -53.81762, y: 0, z: -28.657366}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -32.982624, y: 0, z: -48.157146}
+    direction: {x: -32.982624, y: 0, z: -45.157146}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: 5.4173546, y: 0, z: -53.07564}
+    direction: {x: 5.4173546, y: 0, z: -50.07564}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: 18.628906, y: 0, z: -45.273373}
+    direction: {x: 18.628906, y: 0, z: -42.273373}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: 61.870842, y: 0, z: 22.48908}
+    direction: {x: 61.870842, y: 0, z: 25.48908}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: 56.355385, y: 0, z: 50.58094}
+    direction: {x: 56.355385, y: 0, z: 53.58094}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: 35.25594, y: 0, z: 38.670055}
+    direction: {x: 35.25594, y: 0, z: 41.670055}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: 17.130959, y: 0, z: 18.563862}
+    direction: {x: 17.130959, y: 0, z: 21.563862}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -5.7818227, y: 0, z: 19.570316}
+    direction: {x: -5.7818227, y: 0, z: 22.570314}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -17.339912, y: 0, z: 37.911987}
+    direction: {x: -17.339912, y: 0, z: 40.91198}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -0.41144562, y: 0, z: 69.71519}
+    direction: {x: -0.41144562, y: 0, z: 72.71518}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -4.5017242, y: 0, z: 82.85495}
+    direction: {x: -4.5017242, y: 0, z: 85.85494}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -48.01149, y: 0, z: 46.29976}
+    direction: {x: -48.01149, y: 0, z: 49.299747}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -54.556866, y: 0, z: 29.952099}
+    direction: {x: -54.556866, y: 0, z: 32.952087}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  - position: {x: -10.375872, y: 0, z: -5.4788685}
+    direction: {x: -10.375872, y: 0, z: -8.4788685}
+    up: {x: 0, y: 1, z: 0}
+    scale: {x: 1, y: 1}
+    roll: 0
+  curves:
+  - n1:
+      position: {x: -10.375872, y: 0, z: -5.4788685}
+      direction: {x: -10.375872, y: 0, z: -8.4788685}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -13.220129, y: 0, z: -19.907202}
+      direction: {x: -13.220129, y: 0, z: -16.907202}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -13.220129, y: 0, z: -19.907202}
+      direction: {x: -13.220129, y: 0, z: -16.907202}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -23.796501, y: 0, z: -21.448063}
+      direction: {x: -23.796501, y: 0, z: -18.448063}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -23.796501, y: 0, z: -21.448063}
+      direction: {x: -23.796501, y: 0, z: -18.448063}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -51.039883, y: 0, z: -13.948688}
+      direction: {x: -51.039883, y: 0, z: -10.948688}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -51.039883, y: 0, z: -13.948688}
+      direction: {x: -51.039883, y: 0, z: -10.948688}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -77.24705, y: 0, z: -6.16329}
+      direction: {x: -77.24705, y: 0, z: -3.16329}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -77.24705, y: 0, z: -6.16329}
+      direction: {x: -77.24705, y: 0, z: -3.16329}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -97.19562, y: 0, z: -33.696365}
+      direction: {x: -97.19562, y: 0, z: -30.696365}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -97.19562, y: 0, z: -33.696365}
+      direction: {x: -97.19562, y: 0, z: -30.696365}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -100.27748, y: 0, z: -62.73866}
+      direction: {x: -100.27748, y: 0, z: -59.73866}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -100.27748, y: 0, z: -62.73866}
+      direction: {x: -100.27748, y: 0, z: -59.73866}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -83.79688, y: 0, z: -77.98}
+      direction: {x: -83.79688, y: 0, z: -74.98}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -83.79688, y: 0, z: -77.98}
+      direction: {x: -83.79688, y: 0, z: -74.98}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -39.01424, y: 0, z: -107.16206}
+      direction: {x: -39.01424, y: 0, z: -104.16206}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -39.01424, y: 0, z: -107.16206}
+      direction: {x: -39.01424, y: 0, z: -104.16206}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -20.737072, y: 0, z: -98.83822}
+      direction: {x: -20.737072, y: 0, z: -95.83822}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -20.737072, y: 0, z: -98.83822}
+      direction: {x: -20.737072, y: 0, z: -95.83822}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -15.556465, y: 0, z: -90.51089}
+      direction: {x: -15.556465, y: 0, z: -87.51089}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -15.556465, y: 0, z: -90.51089}
+      direction: {x: -15.556465, y: 0, z: -87.51089}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -25.381823, y: 0, z: -74.822426}
+      direction: {x: -25.381823, y: 0, z: -71.822426}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -25.381823, y: 0, z: -74.822426}
+      direction: {x: -25.381823, y: 0, z: -71.822426}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -57.882046, y: 0, z: -76.436935}
+      direction: {x: -57.882046, y: 0, z: -73.436935}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -57.882046, y: 0, z: -76.436935}
+      direction: {x: -57.882046, y: 0, z: -73.436935}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -77.427055, y: 0, z: -62.49677}
+      direction: {x: -77.427055, y: 0, z: -59.49677}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -77.427055, y: 0, z: -62.49677}
+      direction: {x: -77.427055, y: 0, z: -59.49677}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -74.65343, y: 0, z: -36.75521}
+      direction: {x: -74.65343, y: 0, z: -33.75521}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -74.65343, y: 0, z: -36.75521}
+      direction: {x: -74.65343, y: 0, z: -33.75521}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -53.81762, y: 0, z: -31.657366}
+      direction: {x: -53.81762, y: 0, z: -28.657366}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -53.81762, y: 0, z: -31.657366}
+      direction: {x: -53.81762, y: 0, z: -28.657366}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -32.982624, y: 0, z: -48.157146}
+      direction: {x: -32.982624, y: 0, z: -45.157146}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -32.982624, y: 0, z: -48.157146}
+      direction: {x: -32.982624, y: 0, z: -45.157146}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: 5.4173546, y: 0, z: -53.07564}
+      direction: {x: 5.4173546, y: 0, z: -50.07564}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: 5.4173546, y: 0, z: -53.07564}
+      direction: {x: 5.4173546, y: 0, z: -50.07564}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: 18.628906, y: 0, z: -45.273373}
+      direction: {x: 18.628906, y: 0, z: -42.273373}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: 18.628906, y: 0, z: -45.273373}
+      direction: {x: 18.628906, y: 0, z: -42.273373}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: 61.870842, y: 0, z: 22.48908}
+      direction: {x: 61.870842, y: 0, z: 25.48908}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: 61.870842, y: 0, z: 22.48908}
+      direction: {x: 61.870842, y: 0, z: 25.48908}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: 56.355385, y: 0, z: 50.58094}
+      direction: {x: 56.355385, y: 0, z: 53.58094}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: 56.355385, y: 0, z: 50.58094}
+      direction: {x: 56.355385, y: 0, z: 53.58094}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: 35.25594, y: 0, z: 38.670055}
+      direction: {x: 35.25594, y: 0, z: 41.670055}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: 35.25594, y: 0, z: 38.670055}
+      direction: {x: 35.25594, y: 0, z: 41.670055}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: 17.130959, y: 0, z: 18.563862}
+      direction: {x: 17.130959, y: 0, z: 21.563862}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: 17.130959, y: 0, z: 18.563862}
+      direction: {x: 17.130959, y: 0, z: 21.563862}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -5.7818227, y: 0, z: 19.570316}
+      direction: {x: -5.7818227, y: 0, z: 22.570314}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -5.7818227, y: 0, z: 19.570316}
+      direction: {x: -5.7818227, y: 0, z: 22.570314}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -17.339912, y: 0, z: 37.911987}
+      direction: {x: -17.339912, y: 0, z: 40.91198}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -17.339912, y: 0, z: 37.911987}
+      direction: {x: -17.339912, y: 0, z: 40.91198}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -0.41144562, y: 0, z: 69.71519}
+      direction: {x: -0.41144562, y: 0, z: 72.71518}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -0.41144562, y: 0, z: 69.71519}
+      direction: {x: -0.41144562, y: 0, z: 72.71518}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -4.5017242, y: 0, z: 82.85495}
+      direction: {x: -4.5017242, y: 0, z: 85.85494}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -4.5017242, y: 0, z: 82.85495}
+      direction: {x: -4.5017242, y: 0, z: 85.85494}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -48.01149, y: 0, z: 46.29976}
+      direction: {x: -48.01149, y: 0, z: 49.299747}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -48.01149, y: 0, z: 46.29976}
+      direction: {x: -48.01149, y: 0, z: 49.299747}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -54.556866, y: 0, z: 29.952099}
+      direction: {x: -54.556866, y: 0, z: 32.952087}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  - n1:
+      position: {x: -54.556866, y: 0, z: 29.952099}
+      direction: {x: -54.556866, y: 0, z: 32.952087}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    n2:
+      position: {x: -10.375872, y: 0, z: -5.4788685}
+      direction: {x: -10.375872, y: 0, z: -8.4788685}
+      up: {x: 0, y: 1, z: 0}
+      scale: {x: 1, y: 1}
+      roll: 0
+    Changed:
+      m_PersistentCalls:
+        m_Calls: []
+  Length: 854.9989
+  isLoop: 1
+  CurveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8140143118384562197
 GameObject:
   m_ObjectHideFlags: 0
