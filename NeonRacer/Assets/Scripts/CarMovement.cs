@@ -16,6 +16,7 @@ public class CarMovement : MonoBehaviour
     private float changeDistance;
     private PointManager pointInstance;
     private float inputCD;
+    
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class CarMovement : MonoBehaviour
         if (playerControlled == false)
         {
             changeDistance = UnityEngine.Random.Range(0.75f, 3.5f);
+            carAgent.speed = 2;
             NextPoint();
         }
         else
