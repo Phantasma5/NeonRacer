@@ -28,7 +28,6 @@ public class CarMovement : MonoBehaviour
         if (playerControlled == false)
         {
             changeDistance = UnityEngine.Random.Range(0.75f, 3.5f);
-            carAgent.speed = 2;
             NextPoint();
         }
         else
@@ -52,7 +51,7 @@ public class CarMovement : MonoBehaviour
     public void MoveCar(Vector3 direction)
     {
         carAgent.destination = transform.position;//make it stop
-
+        carAgent.speed = 4;
         GameObject temp = new GameObject();
         Vector3 pos = transform.position;
         pos.x += direction.x;
