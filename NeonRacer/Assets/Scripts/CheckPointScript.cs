@@ -42,6 +42,19 @@ public class CheckPointScript : MonoBehaviour
                 {
                     player.lastCheckPoint = sender;
                     player.lapCount++;
+                    if(player.lapCount >= 2)
+                    {
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
+                        DontDestroyOnLoad(player);
+                        Destroy(player.GetComponent<UnityEngine.AI.NavMeshAgent>());
+                        Destroy(player.GetComponent<Rigidbody>());
+                        Destroy(player.GetComponent<CarMovement>());
+                        Destroy(References.instance.gameObject);
+                        player.transform.position = Vector3.zero;
+                        Vector3 rot = player.transform.eulerAngles;
+                        rot.z += 90;
+                        player.transform.eulerAngles = rot;
+                    }
                 }
                 break;
             default:
