@@ -39,7 +39,7 @@ public class RankUI : MonoBehaviour
 
     private void Update()
     {
-        laps.text = "Lap " + player.GetComponent<CarData>().lapCount + "/" + "3";
+        laps.text = "Lap " + (player.GetComponent<CarData>().lapCount+1) + "/" + "2";
 
         rank.text = player.GetComponent<CarData>().rank.ToString();
     }

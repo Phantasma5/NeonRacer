@@ -41,9 +41,12 @@ public class Placements : MonoBehaviour
             }
         }
 
+         // TODO: sort players by checkpoints and laps 
+
         Players.Sort(SortByDist);
         Players.Reverse();
 
+        //set rank on player
         for (int i = 1; i < Players.Count + 1; i++)
         {
             Players[i-1].GetComponent<CarData>().rank = i;
